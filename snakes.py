@@ -6,10 +6,19 @@ class Snake:
 class Cobra(Snake):
     """Definitely dangerous, yup."""
     
+    self.venom = 100
+
+    def __init__(self):
+	"""Initialize that Cobra"""
+        self.venom=300
+	
+
     def bite(self, other):
         """Deliver a dose of venom."""
-        pass
-
+        other.bitten = True
+	self.venom = self.venom - 10
+	print("That bites!")
+	return
     
 class BoaConstrictor(Snake):
     """This one gives really good hugs."""
