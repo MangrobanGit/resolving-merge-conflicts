@@ -30,4 +30,8 @@ class BoaConstrictor(Snake):
     
 class BoatConstrictor(BoaConstrictor):
     """Loose snakes sink ships?"""
-    pass
+
+    def __init__(self):
+        """Create a new BoatConstrictor"""
+        super().__init__()
+        self.size = "enormous"
